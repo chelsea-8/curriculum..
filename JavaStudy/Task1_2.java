@@ -27,6 +27,7 @@ public class Task1_2 {
       strArray[2]="ぶどう";
 
 
+      
       // ④ ③で作成した配列の2番目の要素を出力しなさい。
       System.out.println(strArray[1]);
 
