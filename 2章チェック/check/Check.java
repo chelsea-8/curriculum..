@@ -3,29 +3,6 @@ package check;
 import constants.Constants;
 
 public class Check {
-
-	private static String firstName = "山田";
-	private static String lastName = "太郎";
-
-	public static void main(String[] args) {
-
-		printName(firstName, lastName);
-
-		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA,
-				Constants.CHECK_CLASS_HOGE);
-		pet.introduce();
-
-		RobotPet robotPet = new RobotPet(Constants.CHECK_CLASS_R2D2,
-				Constants.CHECK_CLASS_LUKE);
-
-		robotPet.introduce();
-
-	}
-	private static void printName(String firstName, String lastName) {
-		System.out.println("printNameメソッド → " + firstName + lastName);
-
-	}
-}
 	// 課題①
 	// 【Check.java】にてフィールド変数firstNameとlastNameを宣言し、
 	// firstName → 自分の名字 lastName → 自分の名前で初期化しなさい。
@@ -37,3 +14,26 @@ public class Check {
 	// 課題③
 	// 【Check.java】にてPetクラスとRobotPetクラスをインスタンス化して、下記の完成イ
 	// メージを出力させなさい
+
+	private static String firstName = "山田";
+	private static String lastName = "太郎";
+
+	public static void main(String[] args) {
+
+		printName(firstName, lastName);
+
+		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
+		pet.introduce();
+
+		Pet.RobotPet robotPet = new Pet("", "").new RobotPet(
+				Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
+
+		robotPet.introduce();
+
+	}
+
+	private static void printName(String firstName, String lastName) {
+		System.out.println("printNameメソッド → " + firstName + lastName);
+
+	}
+}
