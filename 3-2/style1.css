@@ -3,7 +3,12 @@
 	height: 100px;
 	background: #141f40;
 }
+.top{
+    width: 400px;
+    height: 100px;
+	background: #141f40;
 
+}
 .main{
     width: 400px;
     height: 250px;
@@ -31,7 +36,7 @@
 }
 .migiue {
     width: 100px;
-    height: 150px;
+    height: 250px;
 	background: #ff9e6b;
     float:left;
 }
@@ -39,14 +44,7 @@
  {
     width: 150px;
     height: 100px;
-	/* background: #0093b7; */
-    float:left;
-}
-.aka
- {
-    width: 250px;
-    height: 100px;
-	background: #8c2727;
+	background: #0093b7;
     float:left;
 }
 
@@ -56,7 +54,11 @@
     height: 100px;
 	background: #d98b30
 }
-
+.bot{
+    width: 400px;
+    height: 100px;
+	background: #d98b30
+}
 
 
 .clearfix::after { 
@@ -64,23 +66,3 @@
     display: block; 
     clear: both;
 }
-/* @media screen and (max-width: 767px) {
-
-    #wrapper {
-        width: 80%;
-    }
-
-}
-
-
-@media screen and (max-width: 479px) {
-
-    .header {
-        height: 300px;
-    }
-
-    .footer {
-        height: 200px;
-    }
-
-} */

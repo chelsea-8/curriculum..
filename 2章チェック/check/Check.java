@@ -25,10 +25,12 @@ public class Check {
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
 		pet.introduce();
 
-		Pet.RobotPet robotPet = new Pet("", "").new RobotPet(
-				Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
+ 
+		Pet.RobotPet robotPet = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
+		// Pet.RobotPet robotPet = new Pet("", "").new RobotPet(
+		// 		Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
 
-		robotPet.introduce();
+	robotPet.introduce();
 
 	}
 
