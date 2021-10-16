@@ -27,25 +27,24 @@ background: #8c2727;
   width: 150px;
   height: 50px;
 background: #dbd400;
+float:left;
+
 }
-.mtate {
-  width: 100px;
-  height: 250px;
-background: #ff9e6b;
-  /* float:left; */
+.ao{
+  width: 150px;
+  height: 100px;
+background: #0093b7;
+float:left;
+
 }
+
 .migiue {
   width: 100px;
   height: 250px;
 background: #ff9e6b;
   float:left;
 }
-.ao
-{
-  width: 150px;
-  height: 100px;
-background: #0093b7;
-}
+
 
 
 .footer{
@@ -54,6 +53,12 @@ background: #0093b7;
 background: #d98b30
 }
 
+.kuro {
+  width: 100px;
+  height: 250px;
+background: #050505;
+  float:left;
+}
 
 
 .clearfix::after { 
