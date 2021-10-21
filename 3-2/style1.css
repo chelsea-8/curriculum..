@@ -15,7 +15,13 @@
 
 }
 
-
+.kiiroao{
+    width: 150px;
+    height: 100px;
+  background: #0093b7;
+  float:left;
+  
+  }
 
 
 .left {
@@ -27,7 +33,7 @@
 
 .aka {
     width: 250px;
-    height: 250px;
+    height: 100px;
 	background: #8c2727;
     float:left;
 }
@@ -39,7 +45,7 @@
 }
 .orenge {
     width: 100px;
-    height: 250px;
+    height: 150px;
 	background: #ff9e6b;
     float:left;
 }
