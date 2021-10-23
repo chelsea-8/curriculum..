@@ -8,6 +8,7 @@
  */
 public class Task1_4 {
 
+	
 	// 定数（アカウント情報）
 	// ① 登録されている名前（USER_NAME）とパスワード（USER_PASSWORD）を定数で定義してください。
 	private static final String USER_NAME = "alice";
@@ -49,6 +50,7 @@ public class Task1_4 {
 			System.out.println(CONST_MSG_ERROR_NAME);
 		}
 		
+
 		// ⑤ 「USER_NAME」も「USER_PASSWORD」の値も間違っていた場合。
 		// 定数を使用して「 入力情報に誤りがあります。 」と出力してください。
 		else 
@@ -59,6 +61,3 @@ public class Task1_4 {
 	}
 
 }
-
-
-
