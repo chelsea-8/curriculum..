@@ -40,12 +40,12 @@ public class Task1_4 {
 
 		// ③ 「USER_NAME」の値のみ等しい場合。
 		// 定数を使用して「 パスワードに誤りがあります。 」 と出力してください。
-		else if (USER_NAME.equals(name) && !USER_PASSWORD.equals("123")) {
+		else if (USER_NAME.equals(name) && !USER_PASSWORD.equals("pass")) {
 			System.out.println(CONST_MSG_ERROR_PASS);
 		}
 		// ④ 「USER_PASSWORD」の値のみ等しい場合。
 		// 定数を使用して「 名前に誤りがあります。 」と出力してください。
-		else if (!USER_NAME.equals("") && USER_PASSWORD.equals(pass)) {
+		else if (!USER_NAME.equals(name) && USER_PASSWORD.equals(pass)) {
 			System.out.println(CONST_MSG_ERROR_NAME);
 		}
 		
