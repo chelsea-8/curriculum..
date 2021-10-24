@@ -1,0 +1,78 @@
+.header {
+  width: 400px;
+height: 100px;
+text-align: left;
+background: #141f40;
+}
+
+.top{
+  width: 400px;
+  height: 100px;
+  background: #141f40;
+  display: flex;
+  justify-content: end;        /* アイテムを末尾に寄せる */
+
+}
+
+.top-inner{
+  position:  relative;
+  top:  20px;                   /* 上からの位置指定 */
+  bottom:  20px;                 /* 下からの位置指定 */
+  left:   -30px;                     /* 左からの位置指定 */
+  right:   px;                    /* 右からの位置指定 */
+  height: 40px;
+  width: 40px;
+  background-color: #a9004b;
+  border: 5px solid rgb(249, 251, 252);
+
+}
+.main{
+  width: 400px;
+  height: 250px;
+
+}
+
+.left {
+  width: 150px;
+  height: 250px;
+background: #80bfa8;	
+  float:left;
+}
+
+
+.right {
+  width: 250px;
+  height: 250px;
+  background: #8c2727;	
+  float:left;
+  display: flex;
+  flex-direction:column
+}
+.right-inner {
+  position:  relative;
+  top:  40px;                   /* 上からの位置指定 */
+  bottom:  40px;                 /* 下からの位置指定 */
+  left:   40px;                     /* 左からの位置指定 */
+  right:   60px;                    /* 右からの位置指定 */
+  height: 40px;
+  width: 150px;
+  background-color: orange;
+  border: 5px solid rgb(249, 251, 252);
+
+}
+
+
+
+
+.footer{
+  width: 400px;
+  height: 100px;
+background: #d98b30
+}
+
+
+.clearfix::after { 
+  content: '';
+  display: block; 
+  clear: both;
+}
