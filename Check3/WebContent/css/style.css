@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.header-bg-color {
+	background-color: gray;
+}
+
+.header-login {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+
+.header-day {
+	padding: 10px;
+	font-size: 10px;
+}
+
+.footer-bg-color {
+	background-color: gray;
+}
+
+.footer-inc {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+
+.jsp-div {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
