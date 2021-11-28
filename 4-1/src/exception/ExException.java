@@ -119,6 +119,7 @@ public class ExException {
 
 		throw new NullPointerException();
 
+
 	}
 
 	private static void callArrayIndexOutOfBoundsException() throws ArrayIndexOutOfBoundsException {
