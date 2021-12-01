@@ -27,7 +27,7 @@ charset=UTF-8">
 				<div class="header-login">login</div>
 			</td>
 			<td>
-				<div><%=tody%></div>
+				<div class="header-day">%=tody%</div>
 			</td>
 		</tr>
 
