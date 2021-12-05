@@ -12,14 +12,7 @@ charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-	Calendar cl = Calendar.getInstance();
 
-	// SimpleDateFormatクラスを使用して、パターンを設定する
-	SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-	String tody = sdf.format(cl.getTime());
-	;
-	%>
 	<header class="header-bg-color">
 	<table>
 		<tr>
@@ -27,7 +20,23 @@ charset=UTF-8">
 				<div class="header-login">login</div>
 			</td>
 			<td>
-				<div class="header-day">%=tody%</div>
+				<div class="header-day">
+					<%Calendar cl = Calendar.getInstance();
+				
+					// SimpleDateFormatクラスを使用して、パターンを設定する
+					SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+					String tody = sdf.format(cl.getTime());
+					;%>
+
+
+						out.println(String.format("<%=tody%>", value));
+
+
+
+
+
+
+					</div>
 			</td>
 		</tr>
 
