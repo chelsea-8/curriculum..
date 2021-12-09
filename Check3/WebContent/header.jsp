@@ -26,7 +26,7 @@ charset=UTF-8">
 					// SimpleDateFormatクラスを使用して、パターンを設定する
 					SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
 					String tody = sdf.format(cl.getTime());
-					out.println(String.format("<%=tody%>",tody));
+					out.println(String.format(tody));
 					%>
 
 					</div>
