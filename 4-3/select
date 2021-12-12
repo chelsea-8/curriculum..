@@ -1,4 +1,4 @@
-CREATE TABLE store_table( 
+CREATE TABLE stock_table( 
     store_code CHAR (4) NOT NULL
     , store_name VARCHAR (20) NOT NULL
     , store_nameAbc VARCHAR (50) NOT NULL

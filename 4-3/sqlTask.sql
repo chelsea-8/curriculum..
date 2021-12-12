@@ -13,9 +13,8 @@
 -- 3. 在庫テーブルに店舗テーブル、商品テーブルを「内部結合」し、店舗名・商品名・在庫数を全て取得しなさい。
 -- [回答]
  SELECT C.store_name, D.goods_name, C.quantity 
- FROM (SELECT A.store_name, B.quantity, B.goods_code 
  FROM store_table as A 
- INNER JOIN stock_table as B ON A.store_code = B.store_code) as C 
+ INNER JOIN stock_table as B ON A.store_code = B.store_code) 
  INNER JOIN goods_table as D ON D.goods_code = C.goods_code;
 
  
@@ -38,7 +37,7 @@
 -- [回答]
  INSERT 
 INTO goods_table(goods_code, goods_name, price, update_day) 
-VALUES ('M001', '�}�t���[', 4500, CURDATE());
+VALUES ('M001', '商品名= マフラー', 4500, CURDATE());
  
 -- 7. 在庫テーブルの商品コード='S987'、かつ、店舗コード='EA01'に対して、「在庫数=10、更新日付=本日日付」で更新しなさい。※実行後のSELECT結果も貼付すること。
 -- [回答]
