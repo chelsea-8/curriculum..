@@ -19,9 +19,13 @@
 
 
 SELECT C.store_name, D.goods_name, C.quantity 
- FROM store_table as A
- INNER JOIN stock_table as B ON A.store_code = B.store_code; 
- INNER JOIN goods_table as D ON D.goods_code = A.goods_code;
+ FROM stock_table as A
+ 
+ INNER JOIN store_table as B 
+   ON A.store_code = B.store_code; 
+ 
+ INNER JOIN goods_table as D 
+   ON A.goods_code = D.goods_code;
 
 
 
