@@ -12,10 +12,19 @@
  
 -- 3. 在庫テーブルに店舗テーブル、商品テーブルを「内部結合」し、店舗名・商品名・在庫数を全て取得しなさい。
 -- [回答]
- SELECT C.store_name, D.goods_name, C.quantity 
- FROM store_table as A 
- INNER JOIN stock_table as B ON A.store_code = B.store_code) 
- INNER JOIN goods_table as D ON D.goods_code = C.goods_code;
+--  SELECT C.store_name, D.goods_name, C.quantity 
+--  FROM store_table 
+--  INNER JOIN stock_table as B ON A.store_code = B.store_code; 
+--  INNER JOIN goods_table as D ON D.goods_code = C.goods_code;
+
+
+SELECT C.store_name, D.goods_name, C.quantity 
+ FROM store_table as A
+ INNER JOIN stock_table as B ON A.store_code = B.store_code; 
+ INNER JOIN goods_table as D ON D.goods_code = A.goods_code;
+
+
+
 
  
 -- 4. 商品テーブルから全商品の単価の平均値を抽出しなさい。
