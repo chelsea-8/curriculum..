@@ -1,0 +1,54 @@
+.header {
+  width: 400px;
+height: 100px;
+background: #141f40;
+}
+
+.main{
+  width: 400px;
+  height: 250px;
+
+}
+
+.left {
+  width: 150px;
+  height: 250px;
+background: #80bfa8;	
+  float:left;
+}
+.hidari{
+  width: 150px;
+  height: 100px;
+background: #0093b7;
+float:left;
+
+}
+.migi{
+  width: 150px;
+  height: 200px;
+  background: #80bfa8;	
+  float:left;
+
+}
+
+.aaa{
+  width: 150px;
+  height: 100px;
+  background: #85ec24;	
+  float:left;
+
+}
+.ccc{
+  width: 150px;
+  height: 100px;
+  background: #da1286;	
+  float:left;
+
+}
+
+
+.clearfix::after { 
+  content: '';
+  display: block; 
+  clear: both;
+}
