@@ -1,8 +1,3 @@
-/**
- * バブルソート
- * チェックテスト-Java1章
- *
- */
 public class Check{
 	public static void main(String[] args){
 			/*

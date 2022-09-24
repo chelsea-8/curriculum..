@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 <body>
-<form action="./search" method="post">
+ <form action="/Check4/search" method="post">
  <div class="wrapper">
  <div class="header">社員情報システム</div>
  <ul>
@@ -16,10 +16,9 @@
  <input type="text" name="id" value="" size="20">
  </li>
  <!-- パスワードを入力する欄を作成してください -->
- <li class="pass">
- <label for=pass>PASS</label>
- <input type="password">   <!-- masuku -->
- 
+ <li class="pass">               <!--  //<li class="pass">    -->  
+<label for=password>PASS</label>     <!--   <label for=pass>PASS</label> -->
+<input type="password" name = "password" value =""> <!-- masuku --> 
  <!-- 検索ボタン -->
  <li><input id="button" type="submit" name="button" value="検索">
  </li>

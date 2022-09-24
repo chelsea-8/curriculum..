@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
- 
+
 import bean.EmployeeBean;
  
 /**
@@ -21,11 +21,12 @@ public class EmployeeService {
  /** ドライバーのクラス名 */
  private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
  /** ・JDMC接続先情報 */
- private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost/postgres";
+ private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/Employee";
  /** ・ユーザー名 */
  private static final String USER = "postgres";
  /** ・パスワード */
- private static final String PASS = "postgres";
+ private static final String PASS = "Ys102321";
+ 
  /** ・タイムフォーマット */
  private static final String TIME_FORMAT = "yyyy/MM/dd HH:mm:ss";
  
@@ -79,6 +80,7 @@ public class EmployeeService {
  */
  preparedStatement = connection.prepareStatement(SQL_SELECT);
   //問⑥ 一番目のindexにIDをセットしてください。2番目のindexにPASSWORDをセット。
+
  preparedStatement.setString(1, id);
  preparedStatement.setString(2, password);
 
@@ -93,9 +95,9 @@ public class EmployeeService {
  
   // 問⑧ EmployeeBeanに取得したデータを入れてください。
  employeeDate = new EmployeeBean();
- employeeDate.setName("tmpName");
- employeeDate.setComment("tmpComment");
- employeeDate.setLogin_Time("tmpLoginTime");
+ employeeDate.setName(tmpName);
+ employeeDate.setComment(tmpComment);
+ employeeDate.setLogin_Time(tmpLoginTime);
  }
  
   // forName()で例外発生
