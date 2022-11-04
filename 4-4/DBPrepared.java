@@ -61,7 +61,6 @@ public class DBPrepared {
                 String column1 = resultSet.getString("SHOHIN_ID");
                 String column2 = resultSet.getString("SHOHIN_NAME");
                 int column3 = resultSet.getInt("TANKA");
-
                 System.out.print(column1 + ",");
                 System.out.print(column2 + ",");
                 System.out.println(column3);
